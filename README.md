@@ -6,7 +6,7 @@ Project app game - toggle hovered squares and hovered logs
 
 ## Dev
 
-* https://star-navi-test-orpin.vercel.app/ - site
+* https://star-navi-test-six.vercel.app/ - site
 * https://60816d9073292b0017cdd833.mockapi.io/ - back-end (mock api)
 
 

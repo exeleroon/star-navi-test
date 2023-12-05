@@ -26,7 +26,7 @@ const Error: React.FC<IError | any> = ({error}) => {
                 <NavLink className={'btn btn-secondary mb-4'} to={'/'}>
                     Back to homepage
                 </NavLink>
-                <div>{errMsg}</div>
+                <div>Error: {errMsg}</div>
             </div>
         )
     }

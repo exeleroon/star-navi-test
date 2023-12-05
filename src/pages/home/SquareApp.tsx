@@ -53,7 +53,16 @@ const SquareApp = () => {
                         defaultValue={'pick'}
                         options={squareSettings}
                     />
-                    <Button onClick={_ => setIsStart(!isStart)}>{isStart ? 'Stop' : 'Start'}</Button>
+                    <FlexContainer style={{position: 'relative'}} padding={'10px'} gap={'20px'} mb={'20px'}>
+                        <Button title="Please select mode before starting app" onClick={_ => {
+                            if (modeVariant === 'pick') {
+                                return;
+                            }
+                            setIsStart(!isStart)
+                        }}>
+                            {isStart ? 'Stop' : 'Start'}</Button>
+                    </FlexContainer>
+
                 </FlexContainer>
 
                 <FlexContainer max_height={'700px'} padding={'10px'}>
@@ -79,7 +88,6 @@ const SquareApp = () => {
             </FlexContainer>
 
             <Logs logs={logs}/>
-
         </FlexContainer>
     );
 };
